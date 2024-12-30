@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電商元件</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="shopping">
+    <div class="productArea">
+      <h4 class="title">商品</h4>
+      <div>
+        <input class="productRadio" type="radio" name="product" id="pd01" data-price="1000">
+        <label for="pd01">商品一</label>
+        <input class="productRadio" type="radio" name="product" id="pd02" data-price="2000">
+        <label for="pd02">商品二</label>
+      </div>
+    </div>
+    <div class="quantityArea">
+      <h4 class="title">數量</h4>
+      <div class="quantity">
+        <button class="minus disabled">－</button><input class="numControl" type="text" inputmode="numeric" value="1"
+          maxlength="2"><button class="plus">＋</button>
+      </div>
+    </div>
+    <div class="priceArea">
+      <h4 class="title">售價</h4>
+      <p>NT<span class="price">1,000</span></p>
+    </div>
+  </section>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

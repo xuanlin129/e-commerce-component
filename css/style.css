@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans TC", serif;
+}
+
+.shopping {
+  width: 80%;
+  max-width: 300px;
+}
+
+.quantityArea,
+.priceArea {
+  display: flex;
+  margin-top: 1.5em;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+.productArea>div {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.productArea input {
+  display: none;
+}
+
+.productArea label {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.productArea input:checked+label {
+  --select-color: #867D60;
+  color: var(--select-color);
+  border-color: var(--select-color);
+}
+
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.minus,
+.plus {
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  background: #867D60;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 10px;
+  padding: 0;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.minus.disabled {
+  background: #999;
+  pointer-events: none;
+}
+
+.numControl {
+  text-align: center;
+  border: 1px solid #867D60;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.priceArea p {
+  color: #f00;
+  font-size: 2rem;
+}
